@@ -1,0 +1,128 @@
+<html>
+<head>
+  <title>Happy New Year!</title>
+  
+  
+     <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet.css' type='text/css'>
+        <title>Happy new year </title>
+        <style>
+            *{
+                margin:0px ;
+                padding:0px;
+                box-sizing:border-box ;
+            }
+            body {
+                background:black;
+                display:flex;
+                align-item:center ;
+                justify-content:center ;
+            
+            }
+            
+            
+            
+            
+            
+            
+            .main{
+                position:relative ;
+                height:230px;
+                width:230px;
+                background:linear-gradient(45deg,transparent,transparent 40% ,#ff0);
+                
+                border-radius:50%;
+                top:180px;
+                animation:infinite linear 800ms anime;
+            
+            
+            
+            }
+            
+            @keyframes anime{
+                0%{
+                    filter:hue-rotate(0deg);
+                    transform:rotate(0deg);
+                }
+                100%{
+                    filter:hue-rotate(360deg);
+                    transform:rotate(360deg);
+                }
+                
+            }
+            
+            .main:before{
+                content:"";
+                position:absolute ;
+                height:220px;
+                width:220px;
+                top:5px;
+                z-index:10000;
+                left:5px;
+                background:#000;border-radius:50%;
+            }
+            
+            
+            .main:after{
+                position:absolute ;
+                top:0;left:0;right:0;
+                bottom:0;
+                background:linear-gradient(45deg,transparent,transparent 40%,#ff0);
+                filter:blur(30px);
+                content:"";
+                border-radius:50%;
+                z-index:40;
+                
+            }
+            
+            .newyear{
+                position:absolute ;
+                color:#01fff4;
+                margin-right:15px;
+                font-size:32px;
+                top:270px;
+                text-shadow:0px 0px 13px #01fff4,0px 0px 25px #01fff4;
+                font-weight:700;
+                letter-spacing:3px;
+                font-family: 'Orbitron', sans-serif;
+                
+            }
+            .three{
+                position:absolute ;
+                color:#ff00ff;
+                transform:rotate(29deg);
+                right:-40px;
+                font-size:40px;
+                text-shadow:0px 0px 13px #38ff12,0px 0px 25px #38ff12;
+                animation:textanim 3s linear infinite ;
+            }
+            @keyframes textanim{
+                0%,8%,20%,35%,50%,70%,78%,95%{
+                    color:#222;
+                    text-shadow:none;
+                }
+                5%,15%,30%,40%,60%,75%,100%{
+                    color:#ff00ff;
+                    text-shadow:0px 0px 13px #ff00ff,0px 0px 25px #ff00ff;
+                }
+                
+            }
+            
+            
+            
+            
+              
+        </style> 
+    </head>
+    <body>
+    <div class="main">
+        
+        
+        
+    </div>
+    
+    
+          <p class="newyear">202<span class="three">3</span></p>
+  <script src="index.js"></script>
+  
+</body>
+</html>
